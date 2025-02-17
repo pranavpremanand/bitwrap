@@ -31,7 +31,7 @@ export { logoImg };
 export const companyDetails = {
   phone: "+91-8950122527",
   address: "Chandigarh, India",
-  email: "hello@bitwrap.tech",
+  email: "bitwrap.tech@gmail.com",
   linkedin: "",
   instagram: "",
   twitter: "",
@@ -310,46 +310,31 @@ export const webPortfolio = [
     id: 1,
     img: require("./assets/images/website projects/5ghomes.webp"),
     title: "5g Homes",
+    link: "https://5ghighspeedinternet.co",
   },
   {
     id: 2,
     img: require("./assets/images/website projects/bayut.webp"),
     title: "Bayut",
+    link: "https://www.bayut.com",
   },
   {
     id: 3,
     img: require("./assets/images/website projects/cold creekcap.webp"),
     title: "Cold Creekcap",
+    link: "https://www.coldcreekcap.com",
   },
   {
     id: 4,
-    img: require("./assets/images/website projects/emergency music .webp"),
-    title: "Emergency Music",
+    img: require("./assets/images/website projects/menissa caterings.webp"),
+    title: "Menissa Caterings",
+    link: "https://messinascatering.com",
   },
   {
     id: 5,
-    img: require("./assets/images/website projects/flatiorn.webp"),
-    title: "Flatiorn",
-  },
-  {
-    id: 6,
-    img: require("./assets/images/website projects/maven.webp"),
-    title: "Maven",
-  },
-  {
-    id: 7,
-    img: require("./assets/images/website projects/menissa caterings.webp"),
-    title: "Menissa Caterings",
-  },
-  {
-    id: 8,
-    img: require("./assets/images/website projects/methodist.webp"),
-    title: "Methodist",
-  },
-  {
-    id: 9,
     img: require("./assets/images/website projects/think reality.webp"),
     title: "Think Reality",
+    link: "https://thinkrealty.ae",
   },
 ];
 
@@ -359,40 +344,48 @@ export const appPortfolio = [
     id: 1,
     img: require("./assets/images/app projects/dubai travel guide.webp"),
     title: "Dubai Travel Guide",
+    link: "https://play.google.com/store/apps/details?id=com.eBps.dubai.travel.guide&pcampaignid=web_share",
   },
   {
     id: 2,
     img: require("./assets/images/app projects/elora hair palour.webp"),
     title: "Elora Hair Palour",
+    link: "https://play.google.com/store/apps/details?id=app.barbera.io&pcampaignid=web_share",
   },
   {
     id: 3,
     img: require("./assets/images/app projects/evans francis.webp"),
     title: "Evans Francis",
+    link: "https://play.google.com/store/apps/details?id=com.chrisBanappdevelopers.evansfrancis&pcampaignid=web_share",
   },
   {
     id: 4,
     img: require("./assets/images/app projects/house of deliverence.webp"),
     title: "House of Deliverance",
+    link: "https://play.google.com/store/apps/details?id=com.christianappdevelopers.hod&pcampaignid=web_share",
   },
   {
     id: 5,
     img: require("./assets/images/app projects/mybitsshop.webp"),
     title: "Mybits Shop",
+    link: "https://play.google.com/store/apps/details?id=com.klikomics.android&pcampaignid=web_share",
   },
   {
     id: 6,
     img: require("./assets/images/app projects/namaz.webp"),
     title: "Namaz",
+    link: "https://play.google.com/store/apps/details?id=com.iccbrossard.prayerBmes&pcampaignid=web_share",
   },
   {
     id: 7,
     img: require("./assets/images/app projects/potea.webp"),
     title: "Potea",
+    link: "https://play.google.com/store/apps/details?id=com.Zigna.AutoSnap&pcampaignid=web_share",
   },
   {
     id: 8,
     img: require("./assets/images/app projects/rentop bike and car.webp"),
     title: "Rentop Bike and Car",
+    link: "https://play.google.com/store/apps/details?id=com.rentop&pcampaignid=web_share",
   },
 ];
