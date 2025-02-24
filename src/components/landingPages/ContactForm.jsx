@@ -47,7 +47,7 @@ const ContactForm = () => {
       const res = await axios.post("https://send-mail-redirect-boostmysites.vercel.app/send-email", data);
 
       if (res.data.success) {
-        toast.success("Email sent successfully");
+        toast.success("Form submitted successfully");
         reset();
         navigate("/thank-you");
       } else {

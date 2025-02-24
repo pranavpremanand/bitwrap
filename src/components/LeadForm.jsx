@@ -48,7 +48,7 @@ const LeadForm = () => {
       );
 
       if (res.data.success) {
-        toast.success("Email sent successfully");
+        toast.success("Form submitted successfully");
         reset();
         navigate("/thank-you");
       } else {
