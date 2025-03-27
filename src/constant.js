@@ -29,7 +29,7 @@ import { ReactComponent as webServiceIcon4 } from "./assets/svgs/services/UIUX D
 export { logoImg };
 
 export const companyDetails = {
-  phone: "+91-8950122527",
+  phone: "916360200372",
   address: "Chandigarh, India",
   email: "bitwrap.tech@gmail.com",
   linkedin: "",
