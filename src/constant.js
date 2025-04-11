@@ -31,8 +31,7 @@ export { logoImg };
 export const companyDetails = {
   phone: "916360200372",
   address: "Chandigarh, India",
-  email: "mpranavprem@gmail.com",
-  // email: "bitwrap.tech@gmail.com",
+  email: "bitwrap.tech@gmail.com",
   linkedin: "",
   instagram: "",
   twitter: "",
