@@ -32,9 +32,9 @@ export const companyDetails = {
   phone: "916360200372",
   address: "Chandigarh, India",
   email: "bitwrap.tech@gmail.com",
-  linkedin: "",
-  instagram: "",
-  twitter: "",
+  linkedin: "https://www.linkedin.com/company/bitwrap-technologies",
+  instagram: "https://www.instagram.com/bitwrap_tech",
+  twitter: "https://x.com/Bitwrap17",
 };
 
 export const routes = [
