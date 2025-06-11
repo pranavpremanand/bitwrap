@@ -23,27 +23,38 @@ const Portfolio = ({ page }) => {
         >
           Work Speaks Volumes: Discover Our Projects
         </h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-7 max-w-5xl mx-auto mt-5">
-          {portfolioList.map(({ img, id, title, link }) => (
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-7 max-w-5xl mx-auto mt-5 w-full">
+          {portfolioList.map(({ icon: Icon, img, id, title, description, link }) => (
             <div
               data-aos="fade-up"
               key={id}
-              className="p-3 border-2 border-secondary group rounded-xl aspect-square shadow-inner_shadow shadow-secondary/20"
+              className="p-3 border-2 border-secondary group rounded-xl aspect-square shadow-inner_shadow shadow-secondary/20 w-full"
             >
               <Link
                 to={link}
                 target="_blank"
-                className="overflow-hidden relative h-full rounded-xl"
+                className="overflow-hidden relative h-full rounded-xl flex flex-col items-center justify-center"
               >
                 <div className="absolute z-[5] top-0 w-full h-full bg-gradient-to-b from-transparent to-primary/20"></div>
-                <img
-                  loading="lazy"
-                  src={img}
-                  width="200"
-                  height="200"
-                  className={`-z-10 h-full w-full object-cover group-hover:scale-110 transition-all duration-200 rounded-xl`}
-                  alt={title}
-                />
+                
+                {img ? (
+                  <img
+                    loading="lazy"
+                    src={img}
+                    width="200"
+                    height="200"
+                    className={`-z-10 h-full w-full object-cover group-hover:scale-110 transition-all duration-200 rounded-xl`}
+                    alt={title}
+                  />
+                ) : (
+                  <div className="flex flex-col items-center justify-center h-full w-full p-6 text-center">
+                    <Icon size={64} className="text-primary mb-4" />
+                    {description && (
+                      <p className="text-sm text-gray-600 mb-2">{description}</p>
+                    )}
+                  </div>
+                )}
+                
                 <h3 className="text-xl z-20 absolute p-3 bottom-0 left-0 w-full bg-primary text-center text-white">
                   {title}
                 </h3>
