@@ -27,7 +27,7 @@ const Portfolio = ({ page }) => {
           {portfolioList.map(({ img, id, title, link }) => (
             <div
               data-aos="fade-up"
-              key={id}
+              key={title}
               className="p-3 border-2 border-secondary group rounded-xl aspect-square shadow-inner_shadow shadow-secondary/20"
             >
               <Link

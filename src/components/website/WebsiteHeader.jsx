@@ -49,7 +49,7 @@ const WebsiteHeader = () => {
                 className={`link ${
                   option.path === pathname && "text-secondary font-semibold"
                 }`}
-                key={option.path}
+                key={option.id}
               >
                 {option.name}
               </NavLink>

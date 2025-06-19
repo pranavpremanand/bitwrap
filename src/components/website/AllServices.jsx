@@ -18,7 +18,7 @@ const AllServices = () => {
           className="mt-5 grid sm:grid-cols-2 lg:grid-cols-3 gap-6"
         >
           {allServices.map((service) => (
-            <div className="bg-secondary/15 hover:bg-primary group hover:text-background transition-all duration-300 rounded-lg p-5 flex text-center flex-col justify-between">
+            <div key={service.id} className="bg-secondary/15 hover:bg-primary group hover:text-background transition-all duration-300 rounded-lg p-5 flex text-center flex-col justify-between">
               <div className="flex flex-col items-center">
                 <div className="w-[6rem] h-[6rem] flex justify-center items-center relative">
                   <div className="absolute z-[1] top-0 w-0 group-hover:w-full h-full transition-all duration-300 bg-secondary rounded-full"></div>

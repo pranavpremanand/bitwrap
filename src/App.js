@@ -14,6 +14,7 @@ import { lazy, Suspense } from "react";
 import { LoadingSpinner } from "./components/LoadingSpinner";
 import ScrollToTop from "./components/ScrollToTop";
 import WhatsAppIcon from "./components/WhatsAppIcon";
+import TawkToChat from "./components/TawkToChat";
 import { Toaster } from "react-hot-toast";
 const LandingPage = lazy(() => import("./pages/LandingPage"));
 const ThankYou = lazy(() => import("./pages/ThankYou"));
@@ -33,6 +34,7 @@ function App() {
         <Router>
           <LoadingSpinnerContext />
           <WhatsAppIcon />
+          <TawkToChat />
           <ScrollToTop />
           <Toaster
             position="top-bottom"
@@ -45,8 +47,8 @@ function App() {
           />
           <Routes>
             {/* Website pages */}
-            {routes.map((route) => (
-              <Route path={route.path} element={route.element} />
+            {routes.map((route, index) => (
+              <Route key={`route-${index}`} path={route.path} element={route.element} />
             ))}
 
             <Route path="*" element={<Navigate to="/" />} />

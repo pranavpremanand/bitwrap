@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.reset-html-content * {
+  all: revert;
+}
+
 * {
   /* font-family: "Space Grotesk", sans-serif; */
   font-family: "Poppins", serif;
