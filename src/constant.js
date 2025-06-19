@@ -6,6 +6,26 @@ import Services from "./pages/Services";
 import Blogs from "./pages/Blogs";
 import BlogDetails from "./pages/BlogDetails";
 
+// Import icons for portfolio placeholders
+import { 
+  ShoppingCart, 
+  Wrench, 
+  Leaf, 
+  MapPin, 
+  BookOpen, 
+  Camera, 
+  Package, 
+  Users, 
+  Stethoscope,
+  Building,
+  FileCode,
+  Briefcase,
+  Globe,
+  Music,
+  ShoppingBag,
+  Droplets
+} from "lucide-react";
+
 // all services
 import { ReactComponent as allServiceIcon1 } from "./assets/svgs/services/App Development.svg";
 import { ReactComponent as allServiceIcon2 } from "./assets/svgs/services/Web Development.svg";
@@ -308,33 +328,57 @@ export const allServices = [
 export const webPortfolio = [
   {
     id: 1,
-    img: require("./assets/images/website projects/5ghomes.webp"),
-    title: "5g Homes",
-    link: "https://5ghighspeedinternet.co",
+    icon: Building,
+    title: "One Medical",
+    link: "https://www.onemedical.com/",
   },
   {
     id: 2,
-    img: require("./assets/images/website projects/bayut.webp"),
-    title: "Bayut",
-    link: "https://www.bayut.com",
+    icon: FileCode,
+    title: "Simple Practice",
+    link: "https://www.simplepractice.com/",
   },
   {
     id: 3,
-    img: require("./assets/images/website projects/cold creekcap.webp"),
-    title: "Cold Creekcap",
-    link: "https://www.coldcreekcap.com",
+    icon: Briefcase,
+    title: "The Ladders",
+    link: "https://www.theladders.com/",
   },
   {
     id: 4,
-    img: require("./assets/images/website projects/menissa caterings.webp"),
-    title: "Menissa Caterings",
-    link: "https://messinascatering.com",
+    icon: Globe,
+    title: "Huge Inc",
+    link: "https://www.hugeinc.com/",
   },
   {
     id: 5,
-    img: require("./assets/images/website projects/think reality.webp"),
-    title: "Think Reality",
-    link: "https://thinkrealty.ae",
+    icon: Music,
+    title: "Mantra Dhwani",
+    link: "https://mantradhwani.com/",
+  },
+  {
+    id: 6,
+    icon: Building,
+    title: "Mucon Factory",
+    link: "https://muconfactory.com/",
+  },
+  {
+    id: 7,
+    icon: Globe,
+    title: "Banjaaran",
+    link: "https://banjaaran.in/",
+  },
+  {
+    id: 8,
+    icon: ShoppingBag,
+    title: "Naseem Perfume",
+    link: "https://www.naseemperfume.in/",
+  },
+  {
+    id: 9,
+    icon: Droplets,
+    title: "Vrikshaveda",
+    link: "https://vrikshaveda.com/",
   },
 ];
 
@@ -342,50 +386,65 @@ export const webPortfolio = [
 export const appPortfolio = [
   {
     id: 1,
-    img: require("./assets/images/app projects/dubai travel guide.webp"),
-    title: "Dubai Travel Guide",
-    link: "https://play.google.com/store/apps/details?id=com.eBps.dubai.travel.guide&pcampaignid=web_share",
+    icon: ShoppingCart,
+    title: "Fresh and Fresh",
+    description: "E-commerce / Grocery",
+    link: "https://play.google.com/store/apps/details?id=com.freshandfresh&hl=en_IN",
   },
   {
     id: 2,
-    img: require("./assets/images/app projects/elora hair palour.webp"),
-    title: "Elora Hair Palour",
-    link: "https://play.google.com/store/apps/details?id=app.barbera.io&pcampaignid=web_share",
+    icon: Wrench,
+    title: "Serviz",
+    description: "On-Demand Services / Home Services",
+    link: "https://play.google.com/store/apps/details?id=in.serviz.app&pcampaignid=web_share",
   },
   {
     id: 3,
-    img: require("./assets/images/app projects/evans francis.webp"),
-    title: "Evans Francis",
-    link: "https://play.google.com/store/apps/details?id=com.chrisBanappdevelopers.evansfrancis&pcampaignid=web_share",
+    icon: Leaf,
+    title: "Planta",
+    description: "Health / Wellness",
+    link: "https://play.google.com/store/apps/details?id=com.stromming.planta&pcampaignid=web_share",
   },
   {
     id: 4,
-    img: require("./assets/images/app projects/house of deliverence.webp"),
-    title: "House of Deliverance",
-    link: "https://play.google.com/store/apps/details?id=com.christianappdevelopers.hod&pcampaignid=web_share",
+    icon: MapPin,
+    title: "Dubai Travel Guide by eTips",
+    description: "Travel / Tourism",
+    link: "https://play.google.com/store/apps/details?id=com.etips.dubai.travel.guide&pcampaignid=web_share",
   },
   {
     id: 5,
-    img: require("./assets/images/app projects/mybitsshop.webp"),
-    title: "Mybits Shop",
+    icon: BookOpen,
+    title: "Klikomics",
+    description: "Entertainment / Comics",
     link: "https://play.google.com/store/apps/details?id=com.klikomics.android&pcampaignid=web_share",
   },
   {
     id: 6,
-    img: require("./assets/images/app projects/namaz.webp"),
-    title: "Namaz",
-    link: "https://play.google.com/store/apps/details?id=com.iccbrossard.prayerBmes&pcampaignid=web_share",
-  },
-  {
-    id: 7,
-    img: require("./assets/images/app projects/potea.webp"),
-    title: "Potea",
+    icon: Camera,
+    title: "Zigna AutoSnap",
+    description: "Real Estate / Photography",
     link: "https://play.google.com/store/apps/details?id=com.Zigna.AutoSnap&pcampaignid=web_share",
   },
   {
-    id: 8,
-    img: require("./assets/images/app projects/rentop bike and car.webp"),
-    title: "Rentop Bike and Car",
+    id: 7,
+    icon: Package,
+    title: "Rentop",
+    description: "Marketplace / Rentals",
     link: "https://play.google.com/store/apps/details?id=com.rentop&pcampaignid=web_share",
+  },
+  {
+    id: 8,
+    icon: Users,
+    title: "Eva People App",
+    description: "Corporate / HR",
+    link: "https://apps.apple.com/eg/app/eva-people-app/id1551622445",
+  },
+  {
+    id: 9,
+    icon: Stethoscope,
+    title: "Vetlab",
+    description: "Health / Veterinary",
+    link: "https://play.google.com/store/apps/details?id=com.app.vetlab",
   },
 ];
