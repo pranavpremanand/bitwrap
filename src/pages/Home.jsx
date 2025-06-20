@@ -77,6 +77,7 @@ const Home = () => {
           }}
         />
       </section>
+
       <div
         data-aos="fade-up"
         className="md:-mt-[7rem] py-[2rem] relative z-10 max-w-6xl mx-auto px-6 grid sm:grid-cols-2 md:grid-cols-3 gap-5"
@@ -124,6 +125,7 @@ const Home = () => {
           </p>
         </div>
       </div>
+
       <section className="">
         <div className="wrapper py-[3rem]">
           <div className="grid lg:grid-cols-2 gap-10 mt-7">

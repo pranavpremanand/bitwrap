@@ -34,7 +34,7 @@ function App() {
         <Router>
           <LoadingSpinnerContext />
           <WhatsAppIcon />
-          <TawkToChat />
+          {/* <TawkToChat /> */}
           <ScrollToTop />
           <Toaster
             position="top-bottom"
